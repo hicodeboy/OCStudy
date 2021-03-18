@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5A6F3DF2600629D002AC283 /* DebounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6F3DE2600629D002AC283 /* DebounceViewController.m */; };
+		E5A6F3E92600DCBE002AC283 /* MessageThrottle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6F3E82600DCBE002AC283 /* MessageThrottle.m */; };
+		E5A6F3F22600DF60002AC283 /* MessageThrottleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6F3F12600DF60002AC283 /* MessageThrottleViewController.m */; };
 		E5B644CF25F63F6F001CF932 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B644CE25F63F6F001CF932 /* AppDelegate.m */; };
 		E5B644D225F63F6F001CF932 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B644D125F63F6F001CF932 /* SceneDelegate.m */; };
 		E5B644D525F63F6F001CF932 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B644D425F63F6F001CF932 /* ViewController.m */; };
@@ -16,6 +19,12 @@
 		E5B644E025F63F71001CF932 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B644DF25F63F71001CF932 /* main.m */; };
 		E5B644EA25F63F71001CF932 /* OCStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B644E925F63F71001CF932 /* OCStudyTests.m */; };
 		E5B644F525F63F71001CF932 /* OCStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B644F425F63F71001CF932 /* OCStudyUITests.m */; };
+		E5B6450825F63FD2001CF932 /* MDPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B6450725F63FD2001CF932 /* MDPointer.m */; };
+		E5B6451125F63FE8001CF932 /* MDPointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B6451025F63FE8001CF932 /* MDPointerViewController.m */; };
+		E5E27E9125FF79C800DB8DE2 /* OnceManagerA.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9025FF79C800DB8DE2 /* OnceManagerA.m */; };
+		E5E27E9725FF79D300DB8DE2 /* OnceManagerB.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9625FF79D300DB8DE2 /* OnceManagerB.m */; };
+		E5E27E9D25FF7D0500DB8DE2 /* OnceManagerC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9C25FF7D0500DB8DE2 /* OnceManagerC.m */; };
+		E5E27EA425FF8B0600DB8DE2 /* NSObject+Throttle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27EA325FF8B0600DB8DE2 /* NSObject+Throttle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5A6F3DD2600629D002AC283 /* DebounceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebounceViewController.h; sourceTree = "<group>"; };
+		E5A6F3DE2600629D002AC283 /* DebounceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebounceViewController.m; sourceTree = "<group>"; };
+		E5A6F3E72600DCBE002AC283 /* MessageThrottle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageThrottle.h; sourceTree = "<group>"; };
+		E5A6F3E82600DCBE002AC283 /* MessageThrottle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageThrottle.m; sourceTree = "<group>"; };
+		E5A6F3F02600DF60002AC283 /* MessageThrottleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageThrottleViewController.h; sourceTree = "<group>"; };
+		E5A6F3F12600DF60002AC283 /* MessageThrottleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageThrottleViewController.m; sourceTree = "<group>"; };
 		E5B644CA25F63F6F001CF932 /* OCStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B644CD25F63F6F001CF932 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E5B644CE25F63F6F001CF932 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +69,18 @@
 		E5B644F025F63F71001CF932 /* OCStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B644F425F63F71001CF932 /* OCStudyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCStudyUITests.m; sourceTree = "<group>"; };
 		E5B644F625F63F71001CF932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5B6450625F63FD2001CF932 /* MDPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPointer.h; sourceTree = "<group>"; };
+		E5B6450725F63FD2001CF932 /* MDPointer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPointer.m; sourceTree = "<group>"; };
+		E5B6450F25F63FE8001CF932 /* MDPointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPointerViewController.h; sourceTree = "<group>"; };
+		E5B6451025F63FE8001CF932 /* MDPointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPointerViewController.m; sourceTree = "<group>"; };
+		E5E27E8F25FF79C800DB8DE2 /* OnceManagerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceManagerA.h; sourceTree = "<group>"; };
+		E5E27E9025FF79C800DB8DE2 /* OnceManagerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceManagerA.m; sourceTree = "<group>"; };
+		E5E27E9525FF79D300DB8DE2 /* OnceManagerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceManagerB.h; sourceTree = "<group>"; };
+		E5E27E9625FF79D300DB8DE2 /* OnceManagerB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceManagerB.m; sourceTree = "<group>"; };
+		E5E27E9B25FF7D0500DB8DE2 /* OnceManagerC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceManagerC.h; sourceTree = "<group>"; };
+		E5E27E9C25FF7D0500DB8DE2 /* OnceManagerC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceManagerC.m; sourceTree = "<group>"; };
+		E5E27EA225FF8B0600DB8DE2 /* NSObject+Throttle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Throttle.h"; sourceTree = "<group>"; };
+		E5E27EA325FF8B0600DB8DE2 /* NSObject+Throttle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Throttle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +108,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5A6F3E62600DCA0002AC283 /* MsgDebounce */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6F3E72600DCBE002AC283 /* MessageThrottle.h */,
+				E5A6F3E82600DCBE002AC283 /* MessageThrottle.m */,
+				E5A6F3F02600DF60002AC283 /* MessageThrottleViewController.h */,
+				E5A6F3F12600DF60002AC283 /* MessageThrottleViewController.m */,
+			);
+			path = MsgDebounce;
+			sourceTree = "<group>";
+		};
 		E5B644C125F63F6F001CF932 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +142,9 @@
 		E5B644CC25F63F6F001CF932 /* OCStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E5E27EA125FF8ADC00DB8DE2 /* ThrottleAndDebounce */,
+				E5E27E8E25FF794300DB8DE2 /* Once */,
+				E5B6450525F63F9B001CF932 /* MultithreadDanglingPointer */,
 				E5B644CD25F63F6F001CF932 /* AppDelegate.h */,
 				E5B644CE25F63F6F001CF932 /* AppDelegate.m */,
 				E5B644D025F63F6F001CF932 /* SceneDelegate.h */,
@@ -135,6 +176,42 @@
 				E5B644F625F63F71001CF932 /* Info.plist */,
 			);
 			path = OCStudyUITests;
+			sourceTree = "<group>";
+		};
+		E5B6450525F63F9B001CF932 /* MultithreadDanglingPointer */ = {
+			isa = PBXGroup;
+			children = (
+				E5B6450625F63FD2001CF932 /* MDPointer.h */,
+				E5B6450725F63FD2001CF932 /* MDPointer.m */,
+				E5B6450F25F63FE8001CF932 /* MDPointerViewController.h */,
+				E5B6451025F63FE8001CF932 /* MDPointerViewController.m */,
+			);
+			path = MultithreadDanglingPointer;
+			sourceTree = "<group>";
+		};
+		E5E27E8E25FF794300DB8DE2 /* Once */ = {
+			isa = PBXGroup;
+			children = (
+				E5E27E8F25FF79C800DB8DE2 /* OnceManagerA.h */,
+				E5E27E9025FF79C800DB8DE2 /* OnceManagerA.m */,
+				E5E27E9525FF79D300DB8DE2 /* OnceManagerB.h */,
+				E5E27E9625FF79D300DB8DE2 /* OnceManagerB.m */,
+				E5E27E9B25FF7D0500DB8DE2 /* OnceManagerC.h */,
+				E5E27E9C25FF7D0500DB8DE2 /* OnceManagerC.m */,
+			);
+			path = Once;
+			sourceTree = "<group>";
+		};
+		E5E27EA125FF8ADC00DB8DE2 /* ThrottleAndDebounce */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6F3E62600DCA0002AC283 /* MsgDebounce */,
+				E5E27EA225FF8B0600DB8DE2 /* NSObject+Throttle.h */,
+				E5E27EA325FF8B0600DB8DE2 /* NSObject+Throttle.m */,
+				E5A6F3DD2600629D002AC283 /* DebounceViewController.h */,
+				E5A6F3DE2600629D002AC283 /* DebounceViewController.m */,
+			);
+			path = ThrottleAndDebounce;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,10 +343,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B6450825F63FD2001CF932 /* MDPointer.m in Sources */,
+				E5E27EA425FF8B0600DB8DE2 /* NSObject+Throttle.m in Sources */,
+				E5E27E9D25FF7D0500DB8DE2 /* OnceManagerC.m in Sources */,
+				E5A6F3F22600DF60002AC283 /* MessageThrottleViewController.m in Sources */,
+				E5B6451125F63FE8001CF932 /* MDPointerViewController.m in Sources */,
 				E5B644D525F63F6F001CF932 /* ViewController.m in Sources */,
+				E5A6F3DF2600629D002AC283 /* DebounceViewController.m in Sources */,
+				E5E27E9725FF79D300DB8DE2 /* OnceManagerB.m in Sources */,
 				E5B644CF25F63F6F001CF932 /* AppDelegate.m in Sources */,
 				E5B644E025F63F71001CF932 /* main.m in Sources */,
 				E5B644D225F63F6F001CF932 /* SceneDelegate.m in Sources */,
+				E5E27E9125FF79C800DB8DE2 /* OnceManagerA.m in Sources */,
+				E5A6F3E92600DCBE002AC283 /* MessageThrottle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
