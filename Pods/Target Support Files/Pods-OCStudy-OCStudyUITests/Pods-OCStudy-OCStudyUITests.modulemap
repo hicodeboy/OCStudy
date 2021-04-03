@@ -1,0 +1,6 @@
+framework module Pods_OCStudy_OCStudyUITests {
+  umbrella header "Pods-OCStudy-OCStudyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -58,12 +58,39 @@ static const char * mt_blockMethodSignature(id blockObj) {
 }
 
 
+@interface MessageThrottle()
+@property (nonatomic, strong) NSObject *flag;
 
+@end
 
 @implementation MessageThrottle
 
 + (void)startTest {
     
+}
+
+@end
+
+
+@interface MessageDebounce()
+@property (nonatomic, strong) NSObject *flag;
+@end
+
+@implementation MessageDebounce
+
+
+- (void)debounce:(DebounceBlock)debounce {
+    NSObject *flag = [[NSObject alloc] init];
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        weakSelf.flag = flag;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+            if (flag == weakSelf.flag) {
+                debounce();
+            }
+        });
+        
+    });
 }
 
 @end

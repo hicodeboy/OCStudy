@@ -7,10 +7,19 @@
 
 #import "MDPointer.h"
 #import <objc/runtime.h>
+#import <SDWebImage/SDWebImage.h>
 
-@interface MDPointer()
+typedef void(^Downloadcomplete)(NSString * url);
+@interface MDPointer() {
+    dispatch_group_t serviceGroup;
+}
 @property (nonatomic, strong) NSMutableData *data;
+@property (nonatomic, strong) NSMutableArray *testArray;
 @property (nonatomic, strong) NSLock *lock;
+
+@property (nonatomic, strong) NSArray *tarr;
+@property (nonatomic, strong) NSArray *tarr2;
+
 @end
 
 static dispatch_queue_t initQueue;
@@ -39,6 +48,7 @@ static void* initQueueContext;
     });
 }
 
+
 void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector) {
     Method originalMethod = class_getInstanceMethod(class, originalSelector);
     Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
@@ -51,21 +61,42 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector) {
 }
 
 
+
 - (instancetype)init {
     self = [super init];
     if (self) {
         _lock = [[NSLock alloc] init];
         
+        serviceGroup = dispatch_group_create();
+        dispatch_group_notify(serviceGroup, dispatch_get_main_queue(), ^{
+    //        NSLog(@"%@", _tarr);
+        });
         
+        _tarr = @[@"http://img.pconline.com.cn/images/photoblog/9/9/8/1/9981681/200910/11/1255259355826.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg"];
+        
+        _tarr2 = @[@"http://img.pconline.com.cn/images/photoblog/9/9/8/1/9981681/200910/11/1255259355826.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg",
+                  @"http://pic38.nipic.com/20140228/5571398_215900721128_2.jpg"];
         
         
     }
     return self;
 }
 
+
 - (void)mdTest1 {
     __weak typeof(self) weakSelf = self;
-    for (int i = 0; i < 1; i++) {
+    for (int i = 0; i < 100; i++) {
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 //            [weakSelf.lock lock];
@@ -75,10 +106,24 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector) {
     }
 }
 
-- (void)setData:(NSMutableData *)data {
-    _data = data;
-    
+
+- (void)test1:(MDPointer *)pointer queue:(dispatch_queue_t)queue {
+    dispatch_async(queue, ^{
+        @autoreleasepool {
+            [pointer mdTest1];
+            
+        
+        }
+    });
 }
+
+
+
+//- (void)setData:(NSMutableData *)data {
+//    _data = data;
+//    
+//}
+
 
 
 - (void)mdTest2 {
@@ -109,6 +154,7 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector) {
     
 }
 
+
 - (void)mdTest3 {
     
     void* context = dispatch_queue_get_specific(initQueue, initQueueKey);
@@ -120,6 +166,70 @@ void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector) {
     } else {
         NSLog(@"不在当前队列");
     }
+}
+
+    
+// @synchronized 崩溃场景
+- (void)mdTest4 {
+    self.testArray = @[].mutableCopy;
+    for (int i = 0; i < 3000; i++) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [self testThreadArray];
+        });
+    }
+}
+    
+- (void)testThreadArray {
+    @synchronized (self.testArray) {
+        self.testArray = @[].mutableCopy;
+    }
+}
+
+- (void)mdTest5 {
+   
+    
+    // dispatch_group crash demo
+    
+    [_tarr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        dispatch_group_enter(self->serviceGroup);
+        
+        
+        SDWebImageDownloaderCompletedBlock complete = ^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
+            
+            NSLog(@"_tarr idx: %zd", idx);
+            dispatch_group_leave(self->serviceGroup);
+        };
+        [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:_tarr[idx]] completed:complete];
+    }];
+    
+    [_tarr2 enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        SDWebImageDownloaderCompletedBlock complete = ^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
+            
+            NSLog(@"_tarr2 idx: %zd", idx);
+            dispatch_group_leave(self->serviceGroup);
+        };
+        [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:_tarr[idx]] completed:complete];
+    }];
+    
+}
+
+
+
+- (void)downLoadUrl:(NSString *) url complete:(Downloadcomplete)complete {
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        if ([url isEqualToString:@"a"]) {
+            sleep(2);
+        } else {
+            sleep(1);
+        }
+        complete(url);
+    });
+    
+        
+    
+    
 }
 
 // 1 主线程只会执行主队列吗？

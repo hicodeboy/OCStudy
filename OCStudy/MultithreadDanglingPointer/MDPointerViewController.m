@@ -25,22 +25,23 @@
     self.mdPointer = [[MDPointer alloc] init];
     // Do any additional setup after loading the view.
     
-    [OnceManagerA sharedInstance];
+//    [OnceManagerA sharedInstance];
     
 }
 - (IBAction)mdTest1:(id)sender {
-    queue = dispatch_queue_create("hello", DISPATCH_QUEUE_SERIAL);
-    dispatch_async(queue, ^{
-        [self.mdPointer mdTest1];
-    });
+//    queue = dispatch_queue_create("hello", DISPATCH_QUEUE_SERIAL);
+//    dispatch_async(queue, ^{
+//        [self.mdPointer mdTest5];
+//    });
 
-  
+    [self.mdPointer test1:self.mdPointer queue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
 }
 - (IBAction)mdTest2:(id)sender {
 //    dispatch_async(queue, ^{
 //        [self.mdPointer mdTest3];
 //    });
-    [self.mdPointer hookAllPropertiesSetter];
+//    [self.mdPointer hookAllPropertiesSetter];
+//    [self.mdPointer mdTest5];
 }
 
 /*
