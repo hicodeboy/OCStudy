@@ -12,6 +12,7 @@
 		B15A869B426EB1F86D487523 /* Pods_OCStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EED3363EBECE7985B25914 /* Pods_OCStudy.framework */; };
 		E54FF4C026186A6C0060CA86 /* SkyLab.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FF4BF26186A6C0060CA86 /* SkyLab.m */; };
 		E54FF4C626186A7D0060CA86 /* ABViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E54FF4C526186A7D0060CA86 /* ABViewController.m */; };
+		E55C508B261C90A000ECCA7D /* ArchivedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55C508A261C90A000ECCA7D /* ArchivedViewController.m */; };
 		E5864E9D2616C6D600264FCF /* AsyncLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5864E9C2616C6D600264FCF /* AsyncLabel.m */; };
 		E5864EA32616C75B00264FCF /* AsyncDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5864EA22616C75B00264FCF /* AsyncDisplayViewController.m */; };
 		E5864EB12616F17C00264FCF /* YYLabelT.m in Sources */ = {isa = PBXBuildFile; fileRef = E5864EB02616F17C00264FCF /* YYLabelT.m */; };
@@ -34,6 +35,7 @@
 		E5B644F525F63F71001CF932 /* OCStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B644F425F63F71001CF932 /* OCStudyUITests.m */; };
 		E5B6450825F63FD2001CF932 /* MDPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B6450725F63FD2001CF932 /* MDPointer.m */; };
 		E5B6451125F63FE8001CF932 /* MDPointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B6451025F63FE8001CF932 /* MDPointerViewController.m */; };
+		E5D15C6F2629D8AD00013385 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D15C6E2629D8AD00013385 /* Vertex.m */; };
 		E5E27E9125FF79C800DB8DE2 /* OnceManagerA.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9025FF79C800DB8DE2 /* OnceManagerA.m */; };
 		E5E27E9725FF79D300DB8DE2 /* OnceManagerB.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9625FF79D300DB8DE2 /* OnceManagerB.m */; };
 		E5E27E9D25FF7D0500DB8DE2 /* OnceManagerC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9C25FF7D0500DB8DE2 /* OnceManagerC.m */; };
@@ -71,6 +73,8 @@
 		E54FF4BF26186A6C0060CA86 /* SkyLab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkyLab.m; sourceTree = "<group>"; };
 		E54FF4C426186A7D0060CA86 /* ABViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ABViewController.h; sourceTree = "<group>"; };
 		E54FF4C526186A7D0060CA86 /* ABViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABViewController.m; sourceTree = "<group>"; };
+		E55C5089261C90A000ECCA7D /* ArchivedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchivedViewController.h; sourceTree = "<group>"; };
+		E55C508A261C90A000ECCA7D /* ArchivedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchivedViewController.m; sourceTree = "<group>"; };
 		E5864E9B2616C6D600264FCF /* AsyncLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncLabel.h; sourceTree = "<group>"; };
 		E5864E9C2616C6D600264FCF /* AsyncLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncLabel.m; sourceTree = "<group>"; };
 		E5864EA12616C75B00264FCF /* AsyncDisplayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsyncDisplayViewController.h; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 		E5B6450725F63FD2001CF932 /* MDPointer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPointer.m; sourceTree = "<group>"; };
 		E5B6450F25F63FE8001CF932 /* MDPointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPointerViewController.h; sourceTree = "<group>"; };
 		E5B6451025F63FE8001CF932 /* MDPointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPointerViewController.m; sourceTree = "<group>"; };
+		E5D15C6D2629D8AD00013385 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		E5D15C6E2629D8AD00013385 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 		E5E27E8F25FF79C800DB8DE2 /* OnceManagerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceManagerA.h; sourceTree = "<group>"; };
 		E5E27E9025FF79C800DB8DE2 /* OnceManagerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceManagerA.m; sourceTree = "<group>"; };
 		E5E27E9525FF79D300DB8DE2 /* OnceManagerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceManagerB.h; sourceTree = "<group>"; };
@@ -187,6 +193,17 @@
 			path = AB;
 			sourceTree = "<group>";
 		};
+		E55C5088261C908300ECCA7D /* ArchivedObject */ = {
+			isa = PBXGroup;
+			children = (
+				E55C5089261C90A000ECCA7D /* ArchivedViewController.h */,
+				E55C508A261C90A000ECCA7D /* ArchivedViewController.m */,
+				E5D15C6D2629D8AD00013385 /* Vertex.h */,
+				E5D15C6E2629D8AD00013385 /* Vertex.m */,
+			);
+			path = ArchivedObject;
+			sourceTree = "<group>";
+		};
 		E5864E9A2616C6BD00264FCF /* Display */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +271,8 @@
 		E5B644CC25F63F6F001CF932 /* OCStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E5D15C692629D54700013385 /* New Group */,
+				E55C5088261C908300ECCA7D /* ArchivedObject */,
 				E54FF4BD26186A620060CA86 /* AB */,
 				E5864E9A2616C6BD00264FCF /* Display */,
 				E596C1FC2611F14300EC2BEE /* CADisplayLinkAndNSTimer */,
@@ -309,6 +328,13 @@
 				E5B39420260DEB900055EE78 /* CBOperationTestViewController.m */,
 			);
 			path = MultithreadDanglingPointer;
+			sourceTree = "<group>";
+		};
+		E5D15C692629D54700013385 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		E5E27E8E25FF794300DB8DE2 /* Once */ = {
@@ -581,6 +607,7 @@
 				E596C1FF2611F17E00EC2BEE /* CBDisplayLinkAndTimerViewController.m in Sources */,
 				E5E27E9D25FF7D0500DB8DE2 /* OnceManagerC.m in Sources */,
 				E5A6F3F22600DF60002AC283 /* MessageThrottleViewController.m in Sources */,
+				E55C508B261C90A000ECCA7D /* ArchivedViewController.m in Sources */,
 				E5B6451125F63FE8001CF932 /* MDPointerViewController.m in Sources */,
 				E54FF4C026186A6C0060CA86 /* SkyLab.m in Sources */,
 				E54FF4C626186A7D0060CA86 /* ABViewController.m in Sources */,
@@ -594,6 +621,7 @@
 				E5864E9D2616C6D600264FCF /* AsyncLabel.m in Sources */,
 				E5E27E9125FF79C800DB8DE2 /* OnceManagerA.m in Sources */,
 				E5864EB12616F17C00264FCF /* YYLabelT.m in Sources */,
+				E5D15C6F2629D8AD00013385 /* Vertex.m in Sources */,
 				E5A6F3E92600DCBE002AC283 /* MessageThrottle.m in Sources */,
 				E5B39421260DEB900055EE78 /* CBOperationTestViewController.m in Sources */,
 			);

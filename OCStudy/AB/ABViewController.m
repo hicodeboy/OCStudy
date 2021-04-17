@@ -20,15 +20,21 @@
 
 @implementation ABViewController
 
+#define kScribbleDataPath [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/data"]
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     
-    [SkyLab abTestWithName:@"Title" A:^{
-        self.titleLabel.text = NSLocalizedString(@"Hello, World!", nil);
-    } B:^{
-        self.titleLabel.text = NSLocalizedString(@"Greetings, Planet!", nil);
-    }];
+//    [SkyLab abTestWithName:@"Title" A:^{
+//        self.titleLabel.text = NSLocalizedString(@"Hello, World!", nil);
+//    } B:^{
+//        self.titleLabel.text = NSLocalizedString(@"Greetings, Planet!", nil);
+//    }];
+    
+    NSLog(@"%d", 36 % 5);
+    
+    
 }
 - (IBAction)resetTests:(id)sender {
 }
