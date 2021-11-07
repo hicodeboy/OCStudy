@@ -19,6 +19,7 @@
 		E596C1E32611780E00EC2BEE /* PPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E596C1E22611780E00EC2BEE /* PPOperation.m */; };
 		E596C1FF2611F17E00EC2BEE /* CBDisplayLinkAndTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E596C1FE2611F17E00EC2BEE /* CBDisplayLinkAndTimerViewController.m */; };
 		E59B547026099BC2003F31F0 /* CBWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E59B546F26099BC2003F31F0 /* CBWebImageDownloaderOperation.m */; };
+		E5A2CA2A262AA4740029A1F7 /* HelloWorldVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A2CA29262AA4740029A1F7 /* HelloWorldVC.m */; };
 		E5A6F3DF2600629D002AC283 /* DebounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6F3DE2600629D002AC283 /* DebounceViewController.m */; };
 		E5A6F3E92600DCBE002AC283 /* MessageThrottle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6F3E82600DCBE002AC283 /* MessageThrottle.m */; };
 		E5A6F3F22600DF60002AC283 /* MessageThrottleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6F3F12600DF60002AC283 /* MessageThrottleViewController.m */; };
@@ -35,11 +36,23 @@
 		E5B644F525F63F71001CF932 /* OCStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B644F425F63F71001CF932 /* OCStudyUITests.m */; };
 		E5B6450825F63FD2001CF932 /* MDPointer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B6450725F63FD2001CF932 /* MDPointer.m */; };
 		E5B6451125F63FE8001CF932 /* MDPointerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B6451025F63FE8001CF932 /* MDPointerViewController.m */; };
+		E5B72E382684889E00BD5007 /* MKMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B72E372684889E00BD5007 /* MKMapViewController.m */; };
+		E5BFE92C2668CCAD00478FAA /* TableViewStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5BFE92B2668CCAD00478FAA /* TableViewStudyViewController.m */; };
+		E5C2B0E62679ACA700053816 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C2B0E52679ACA700053816 /* UserCenterViewController.m */; };
+		E5C2B0EF2679ACB600053816 /* UserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C2B0EE2679ACB600053816 /* UserCenter.m */; };
 		E5D15C6F2629D8AD00013385 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D15C6E2629D8AD00013385 /* Vertex.m */; };
+		E5DB85082669CEF800765F96 /* LoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DB85072669CEF800765F96 /* LoopViewController.m */; };
+		E5DB850E2669CF2F00765F96 /* LoopShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DB850D2669CF2F00765F96 /* LoopShowView.m */; };
+		E5DB8514266A024300765F96 /* LoopScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DB8513266A024300765F96 /* LoopScrollImageView.m */; };
+		E5DB8521266A0B8500765F96 /* ASRotationPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DB8520266A0B8500765F96 /* ASRotationPageView.m */; };
+		E5DC863426DBA87300537DA2 /* BlockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DC863326DBA87300537DA2 /* BlockDemo.m */; };
+		E5DC863D26DBA92600537DA2 /* CBBlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DC863C26DBA92600537DA2 /* CBBlockObject.m */; };
 		E5E27E9125FF79C800DB8DE2 /* OnceManagerA.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9025FF79C800DB8DE2 /* OnceManagerA.m */; };
 		E5E27E9725FF79D300DB8DE2 /* OnceManagerB.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9625FF79D300DB8DE2 /* OnceManagerB.m */; };
 		E5E27E9D25FF7D0500DB8DE2 /* OnceManagerC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9C25FF7D0500DB8DE2 /* OnceManagerC.m */; };
 		E5E27EA425FF8B0600DB8DE2 /* NSObject+Throttle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27EA325FF8B0600DB8DE2 /* NSObject+Throttle.m */; };
+		E5E6E94C2731561B00AACD2B /* GeosDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E6E94B2731561B00AACD2B /* GeosDemo.swift */; };
+		E5EDC4A5266F923300C9DDA9 /* MySetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5EDC4A4266F923300C9DDA9 /* MySetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +100,8 @@
 		E596C1FE2611F17E00EC2BEE /* CBDisplayLinkAndTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBDisplayLinkAndTimerViewController.m; sourceTree = "<group>"; };
 		E59B546E26099BC2003F31F0 /* CBWebImageDownloaderOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		E59B546F26099BC2003F31F0 /* CBWebImageDownloaderOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		E5A2CA28262AA4740029A1F7 /* HelloWorldVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldVC.h; sourceTree = "<group>"; };
+		E5A2CA29262AA4740029A1F7 /* HelloWorldVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldVC.m; sourceTree = "<group>"; };
 		E5A6F3DD2600629D002AC283 /* DebounceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebounceViewController.h; sourceTree = "<group>"; };
 		E5A6F3DE2600629D002AC283 /* DebounceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DebounceViewController.m; sourceTree = "<group>"; };
 		E5A6F3E72600DCBE002AC283 /* MessageThrottle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageThrottle.h; sourceTree = "<group>"; };
@@ -119,8 +134,28 @@
 		E5B6450725F63FD2001CF932 /* MDPointer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPointer.m; sourceTree = "<group>"; };
 		E5B6450F25F63FE8001CF932 /* MDPointerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDPointerViewController.h; sourceTree = "<group>"; };
 		E5B6451025F63FE8001CF932 /* MDPointerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDPointerViewController.m; sourceTree = "<group>"; };
+		E5B72E362684889E00BD5007 /* MKMapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKMapViewController.h; sourceTree = "<group>"; };
+		E5B72E372684889E00BD5007 /* MKMapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMapViewController.m; sourceTree = "<group>"; };
+		E5BFE92A2668CCAD00478FAA /* TableViewStudyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewStudyViewController.h; sourceTree = "<group>"; };
+		E5BFE92B2668CCAD00478FAA /* TableViewStudyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewStudyViewController.m; sourceTree = "<group>"; };
+		E5C2B0E42679ACA700053816 /* UserCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
+		E5C2B0E52679ACA700053816 /* UserCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
+		E5C2B0ED2679ACB600053816 /* UserCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCenter.h; sourceTree = "<group>"; };
+		E5C2B0EE2679ACB600053816 /* UserCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCenter.m; sourceTree = "<group>"; };
 		E5D15C6D2629D8AD00013385 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		E5D15C6E2629D8AD00013385 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		E5DB85062669CEF800765F96 /* LoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopViewController.h; sourceTree = "<group>"; };
+		E5DB85072669CEF800765F96 /* LoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopViewController.m; sourceTree = "<group>"; };
+		E5DB850C2669CF2F00765F96 /* LoopShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopShowView.h; sourceTree = "<group>"; };
+		E5DB850D2669CF2F00765F96 /* LoopShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopShowView.m; sourceTree = "<group>"; };
+		E5DB8512266A024300765F96 /* LoopScrollImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoopScrollImageView.h; sourceTree = "<group>"; };
+		E5DB8513266A024300765F96 /* LoopScrollImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoopScrollImageView.m; sourceTree = "<group>"; };
+		E5DB851F266A0B8500765F96 /* ASRotationPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRotationPageView.h; sourceTree = "<group>"; };
+		E5DB8520266A0B8500765F96 /* ASRotationPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRotationPageView.m; sourceTree = "<group>"; };
+		E5DC863226DBA87300537DA2 /* BlockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockDemo.h; sourceTree = "<group>"; };
+		E5DC863326DBA87300537DA2 /* BlockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockDemo.m; sourceTree = "<group>"; };
+		E5DC863B26DBA92600537DA2 /* CBBlockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBBlockObject.h; sourceTree = "<group>"; };
+		E5DC863C26DBA92600537DA2 /* CBBlockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBBlockObject.m; sourceTree = "<group>"; };
 		E5E27E8F25FF79C800DB8DE2 /* OnceManagerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceManagerA.h; sourceTree = "<group>"; };
 		E5E27E9025FF79C800DB8DE2 /* OnceManagerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceManagerA.m; sourceTree = "<group>"; };
 		E5E27E9525FF79D300DB8DE2 /* OnceManagerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceManagerB.h; sourceTree = "<group>"; };
@@ -129,6 +164,10 @@
 		E5E27E9C25FF7D0500DB8DE2 /* OnceManagerC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceManagerC.m; sourceTree = "<group>"; };
 		E5E27EA225FF8B0600DB8DE2 /* NSObject+Throttle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Throttle.h"; sourceTree = "<group>"; };
 		E5E27EA325FF8B0600DB8DE2 /* NSObject+Throttle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Throttle.m"; sourceTree = "<group>"; };
+		E5E6E94A2731561A00AACD2B /* OCStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCStudy-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5E6E94B2731561B00AACD2B /* GeosDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeosDemo.swift; sourceTree = "<group>"; };
+		E5EDC4A3266F923300C9DDA9 /* MySetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySetViewController.h; sourceTree = "<group>"; };
+		E5EDC4A4266F923300C9DDA9 /* MySetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySetViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +274,15 @@
 			path = SDWebImageStudy;
 			sourceTree = "<group>";
 		};
+		E5A2CA24262AA45A0029A1F7 /* LLVM */ = {
+			isa = PBXGroup;
+			children = (
+				E5A2CA28262AA4740029A1F7 /* HelloWorldVC.h */,
+				E5A2CA29262AA4740029A1F7 /* HelloWorldVC.m */,
+			);
+			path = LLVM;
+			sourceTree = "<group>";
+		};
 		E5A6F3E62600DCA0002AC283 /* MsgDebounce */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,7 +319,12 @@
 		E5B644CC25F63F6F001CF932 /* OCStudy */ = {
 			isa = PBXGroup;
 			children = (
-				E5D15C692629D54700013385 /* New Group */,
+				E5E6E9462731560700AACD2B /* Geos */,
+				E5DC862E26DBA85C00537DA2 /* Block */,
+				E5B72E322684887100BD5007 /* MKMapDemo */,
+				E5BFE9292668CC8E00478FAA /* TableView */,
+				E5A2CA24262AA45A0029A1F7 /* LLVM */,
+				E5D15C692629D54700013385 /* Set */,
 				E55C5088261C908300ECCA7D /* ArchivedObject */,
 				E54FF4BD26186A620060CA86 /* AB */,
 				E5864E9A2616C6BD00264FCF /* Display */,
@@ -316,6 +369,7 @@
 		E5B6450525F63F9B001CF932 /* MultithreadDanglingPointer */ = {
 			isa = PBXGroup;
 			children = (
+				E5C2B0E32679AC9200053816 /* UserCenter */,
 				E5B6450625F63FD2001CF932 /* MDPointer.h */,
 				E5B6450725F63FD2001CF932 /* MDPointer.m */,
 				E5B6450F25F63FE8001CF932 /* MDPointerViewController.h */,
@@ -330,11 +384,61 @@
 			path = MultithreadDanglingPointer;
 			sourceTree = "<group>";
 		};
-		E5D15C692629D54700013385 /* New Group */ = {
+		E5B72E322684887100BD5007 /* MKMapDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E5B72E362684889E00BD5007 /* MKMapViewController.h */,
+				E5B72E372684889E00BD5007 /* MKMapViewController.m */,
 			);
-			path = "New Group";
+			path = MKMapDemo;
+			sourceTree = "<group>";
+		};
+		E5BFE9292668CC8E00478FAA /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E5BFE92A2668CCAD00478FAA /* TableViewStudyViewController.h */,
+				E5BFE92B2668CCAD00478FAA /* TableViewStudyViewController.m */,
+				E5DB85062669CEF800765F96 /* LoopViewController.h */,
+				E5DB85072669CEF800765F96 /* LoopViewController.m */,
+				E5DB851F266A0B8500765F96 /* ASRotationPageView.h */,
+				E5DB8520266A0B8500765F96 /* ASRotationPageView.m */,
+				E5DB850C2669CF2F00765F96 /* LoopShowView.h */,
+				E5DB850D2669CF2F00765F96 /* LoopShowView.m */,
+				E5DB8512266A024300765F96 /* LoopScrollImageView.h */,
+				E5DB8513266A024300765F96 /* LoopScrollImageView.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		E5C2B0E32679AC9200053816 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				E5C2B0E42679ACA700053816 /* UserCenterViewController.h */,
+				E5C2B0E52679ACA700053816 /* UserCenterViewController.m */,
+				E5C2B0ED2679ACB600053816 /* UserCenter.h */,
+				E5C2B0EE2679ACB600053816 /* UserCenter.m */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		E5D15C692629D54700013385 /* Set */ = {
+			isa = PBXGroup;
+			children = (
+				E5EDC4A3266F923300C9DDA9 /* MySetViewController.h */,
+				E5EDC4A4266F923300C9DDA9 /* MySetViewController.m */,
+			);
+			path = Set;
+			sourceTree = "<group>";
+		};
+		E5DC862E26DBA85C00537DA2 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				E5DC863226DBA87300537DA2 /* BlockDemo.h */,
+				E5DC863326DBA87300537DA2 /* BlockDemo.m */,
+				E5DC863B26DBA92600537DA2 /* CBBlockObject.h */,
+				E5DC863C26DBA92600537DA2 /* CBBlockObject.m */,
+			);
+			path = Block;
 			sourceTree = "<group>";
 		};
 		E5E27E8E25FF794300DB8DE2 /* Once */ = {
@@ -360,6 +464,15 @@
 				E5A6F3DE2600629D002AC283 /* DebounceViewController.m */,
 			);
 			path = ThrottleAndDebounce;
+			sourceTree = "<group>";
+		};
+		E5E6E9462731560700AACD2B /* Geos */ = {
+			isa = PBXGroup;
+			children = (
+				E5E6E94B2731561B00AACD2B /* GeosDemo.swift */,
+				E5E6E94A2731561A00AACD2B /* OCStudy-Bridging-Header.h */,
+			);
+			path = Geos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +546,7 @@
 				TargetAttributes = {
 					E5B644C925F63F6F001CF932 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					E5B644E425F63F71001CF932 = {
 						CreatedOnToolsVersion = 12.3;
@@ -600,15 +714,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5B3941B260DEB450055EE78 /* CBOperation.m in Sources */,
+				E5EDC4A5266F923300C9DDA9 /* MySetViewController.m in Sources */,
+				E5BFE92C2668CCAD00478FAA /* TableViewStudyViewController.m in Sources */,
+				E5C2B0EF2679ACB600053816 /* UserCenter.m in Sources */,
 				E5B6450825F63FD2001CF932 /* MDPointer.m in Sources */,
 				E5864EA32616C75B00264FCF /* AsyncDisplayViewController.m in Sources */,
+				E5DB850E2669CF2F00765F96 /* LoopShowView.m in Sources */,
+				E5DB8521266A0B8500765F96 /* ASRotationPageView.m in Sources */,
+				E5DC863D26DBA92600537DA2 /* CBBlockObject.m in Sources */,
 				E596C1E32611780E00EC2BEE /* PPOperation.m in Sources */,
+				E5A2CA2A262AA4740029A1F7 /* HelloWorldVC.m in Sources */,
 				E5E27EA425FF8B0600DB8DE2 /* NSObject+Throttle.m in Sources */,
 				E596C1FF2611F17E00EC2BEE /* CBDisplayLinkAndTimerViewController.m in Sources */,
 				E5E27E9D25FF7D0500DB8DE2 /* OnceManagerC.m in Sources */,
+				E5E6E94C2731561B00AACD2B /* GeosDemo.swift in Sources */,
 				E5A6F3F22600DF60002AC283 /* MessageThrottleViewController.m in Sources */,
 				E55C508B261C90A000ECCA7D /* ArchivedViewController.m in Sources */,
 				E5B6451125F63FE8001CF932 /* MDPointerViewController.m in Sources */,
+				E5DB8514266A024300765F96 /* LoopScrollImageView.m in Sources */,
+				E5B72E382684889E00BD5007 /* MKMapViewController.m in Sources */,
+				E5DC863426DBA87300537DA2 /* BlockDemo.m in Sources */,
+				E5DB85082669CEF800765F96 /* LoopViewController.m in Sources */,
 				E54FF4C026186A6C0060CA86 /* SkyLab.m in Sources */,
 				E54FF4C626186A7D0060CA86 /* ABViewController.m in Sources */,
 				E5B644D525F63F6F001CF932 /* ViewController.m in Sources */,
@@ -616,6 +742,7 @@
 				E5E27E9725FF79D300DB8DE2 /* OnceManagerB.m in Sources */,
 				E5B644CF25F63F6F001CF932 /* AppDelegate.m in Sources */,
 				E5B644E025F63F71001CF932 /* main.m in Sources */,
+				E5C2B0E62679ACA700053816 /* UserCenterViewController.m in Sources */,
 				E59B547026099BC2003F31F0 /* CBWebImageDownloaderOperation.m in Sources */,
 				E5B644D225F63F6F001CF932 /* SceneDelegate.m in Sources */,
 				E5864E9D2616C6D600264FCF /* AsyncLabel.m in Sources */,
@@ -796,6 +923,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OCStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -804,6 +932,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hicodeboy.OCStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCStudy/Geos/OCStudy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -814,6 +945,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OCStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -822,6 +954,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hicodeboy.OCStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCStudy/Geos/OCStudy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -830,6 +964,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB1D2167206E5D4BDCEAA3F1 /* Pods-OCStudyTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OCStudyTests/Info.plist;
@@ -850,6 +985,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E9D3F781031EE891C55F406 /* Pods-OCStudyTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OCStudyTests/Info.plist;
@@ -870,6 +1006,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4477BB1C594D67A911013A85 /* Pods-OCStudy-OCStudyUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OCStudyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -888,6 +1025,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2C9BFA6C3869F16F1F37A990 /* Pods-OCStudy-OCStudyUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = OCStudyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

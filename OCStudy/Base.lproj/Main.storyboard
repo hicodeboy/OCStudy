@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7lg-7P-poW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BjV-wH-fmP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -93,6 +93,46 @@
             </objects>
             <point key="canvasLocation" x="-75" y="1541"/>
         </scene>
+        <!--Loop View Controller-->
+        <scene sceneID="idh-b1-udX">
+            <objects>
+                <viewController id="pBY-Oe-w2u" customClass="LoopViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W6V-iv-9fZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6V-Ve-pjN">
+                                <rect key="frame" x="132" y="625" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="update:" destination="pBY-Oe-w2u" eventType="touchUpInside" id="oQR-0d-NFz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5U3-dM-1Bw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lAF-YX-CSa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717" y="2056"/>
+        </scene>
+        <!--Table View Study View Controller-->
+        <scene sceneID="LlQ-BO-cue">
+            <objects>
+                <viewController id="Ouc-RR-NZI" customClass="TableViewStudyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Unk-QN-lSP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UlB-Bm-R3x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjX-eP-pab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="2108"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="TSo-Qc-pG6">
             <objects>
@@ -165,6 +205,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ykh-Fb-o6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-46.376811594202906" y="2332.3660714285711"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="nZM-ZL-uq7">
+            <objects>
+                <viewController id="NVi-SE-Pvh" customClass="MKMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dbx-uQ-A6y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rfP-oy-jlG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCe-GE-geb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="3067"/>
+        </scene>
+        <!--Block Demo-->
+        <scene sceneID="erj-q2-5o5">
+            <objects>
+                <viewController id="BjV-wH-fmP" customClass="BlockDemo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J1u-eF-fAt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="duz-zM-egF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQ4-64-fbs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="3090"/>
         </scene>
         <!--Pointer View Controller-->
         <scene sceneID="zCa-Ix-2K3">
@@ -279,10 +349,35 @@
             </objects>
             <point key="canvasLocation" x="1083" y="1231"/>
         </scene>
-        <!--View Controller-->
+        <!--User Center View Controller-->
+        <scene sceneID="uZ7-2Q-8ZJ">
+            <objects>
+                <viewController id="Bb1-Ob-DKs" customClass="UserCenterViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="itn-uE-x10">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hO-dx-FXW">
+                                <rect key="frame" x="184" y="291" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tap:" destination="Bb1-Ob-DKs" eventType="touchUpInside" id="Vwu-0n-afd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5qF-Pf-olW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tuv-BL-cox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168" y="1190"/>
+        </scene>
+        <!--My Set View Controller-->
         <scene sceneID="cAA-aI-eKm">
             <objects>
-                <viewController id="510-jI-MP9" sceneMemberID="viewController">
+                <viewController id="510-jI-MP9" customClass="MySetViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="360-wZ-fAO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,6 +388,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8f-Pl-HQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-264" y="-603"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LRc-g5-Fz9">
+            <objects>
+                <viewController id="1hx-ku-O7H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GgM-i4-rTq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Tqf-Bc-N6L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mF2-5O-i4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713" y="1982"/>
         </scene>
     </scenes>
     <resources>
