@@ -47,6 +47,8 @@
 		E5DB8521266A0B8500765F96 /* ASRotationPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DB8520266A0B8500765F96 /* ASRotationPageView.m */; };
 		E5DC863426DBA87300537DA2 /* BlockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DC863326DBA87300537DA2 /* BlockDemo.m */; };
 		E5DC863D26DBA92600537DA2 /* CBBlockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DC863C26DBA92600537DA2 /* CBBlockObject.m */; };
+		E5DF1D4627488C60007C2F62 /* CBBaseLockDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DF1D4527488C60007C2F62 /* CBBaseLockDemo.m */; };
+		E5DF1D4F27488CDD007C2F62 /* CBConditionDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DF1D4E27488CDD007C2F62 /* CBConditionDemo.m */; };
 		E5E27E9125FF79C800DB8DE2 /* OnceManagerA.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9025FF79C800DB8DE2 /* OnceManagerA.m */; };
 		E5E27E9725FF79D300DB8DE2 /* OnceManagerB.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9625FF79D300DB8DE2 /* OnceManagerB.m */; };
 		E5E27E9D25FF7D0500DB8DE2 /* OnceManagerC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E27E9C25FF7D0500DB8DE2 /* OnceManagerC.m */; };
@@ -156,6 +158,10 @@
 		E5DC863326DBA87300537DA2 /* BlockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockDemo.m; sourceTree = "<group>"; };
 		E5DC863B26DBA92600537DA2 /* CBBlockObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBBlockObject.h; sourceTree = "<group>"; };
 		E5DC863C26DBA92600537DA2 /* CBBlockObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBBlockObject.m; sourceTree = "<group>"; };
+		E5DF1D4427488C60007C2F62 /* CBBaseLockDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBBaseLockDemo.h; sourceTree = "<group>"; };
+		E5DF1D4527488C60007C2F62 /* CBBaseLockDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBBaseLockDemo.m; sourceTree = "<group>"; };
+		E5DF1D4D27488CDD007C2F62 /* CBConditionDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBConditionDemo.h; sourceTree = "<group>"; };
+		E5DF1D4E27488CDD007C2F62 /* CBConditionDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBConditionDemo.m; sourceTree = "<group>"; };
 		E5E27E8F25FF79C800DB8DE2 /* OnceManagerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceManagerA.h; sourceTree = "<group>"; };
 		E5E27E9025FF79C800DB8DE2 /* OnceManagerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnceManagerA.m; sourceTree = "<group>"; };
 		E5E27E9525FF79D300DB8DE2 /* OnceManagerB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceManagerB.h; sourceTree = "<group>"; };
@@ -319,6 +325,7 @@
 		E5B644CC25F63F6F001CF932 /* OCStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E5DF1D4027488C40007C2F62 /* Locks */,
 				E5E6E9462731560700AACD2B /* Geos */,
 				E5DC862E26DBA85C00537DA2 /* Block */,
 				E5B72E322684887100BD5007 /* MKMapDemo */,
@@ -439,6 +446,17 @@
 				E5DC863C26DBA92600537DA2 /* CBBlockObject.m */,
 			);
 			path = Block;
+			sourceTree = "<group>";
+		};
+		E5DF1D4027488C40007C2F62 /* Locks */ = {
+			isa = PBXGroup;
+			children = (
+				E5DF1D4427488C60007C2F62 /* CBBaseLockDemo.h */,
+				E5DF1D4527488C60007C2F62 /* CBBaseLockDemo.m */,
+				E5DF1D4D27488CDD007C2F62 /* CBConditionDemo.h */,
+				E5DF1D4E27488CDD007C2F62 /* CBConditionDemo.m */,
+			);
+			path = Locks;
 			sourceTree = "<group>";
 		};
 		E5E27E8E25FF794300DB8DE2 /* Once */ = {
@@ -713,6 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DF1D4627488C60007C2F62 /* CBBaseLockDemo.m in Sources */,
 				E5B3941B260DEB450055EE78 /* CBOperation.m in Sources */,
 				E5EDC4A5266F923300C9DDA9 /* MySetViewController.m in Sources */,
 				E5BFE92C2668CCAD00478FAA /* TableViewStudyViewController.m in Sources */,
@@ -725,6 +744,7 @@
 				E596C1E32611780E00EC2BEE /* PPOperation.m in Sources */,
 				E5A2CA2A262AA4740029A1F7 /* HelloWorldVC.m in Sources */,
 				E5E27EA425FF8B0600DB8DE2 /* NSObject+Throttle.m in Sources */,
+				E5DF1D4F27488CDD007C2F62 /* CBConditionDemo.m in Sources */,
 				E596C1FF2611F17E00EC2BEE /* CBDisplayLinkAndTimerViewController.m in Sources */,
 				E5E27E9D25FF7D0500DB8DE2 /* OnceManagerC.m in Sources */,
 				E5E6E94C2731561B00AACD2B /* GeosDemo.swift in Sources */,
@@ -925,6 +945,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRM5754N86;
 				INFOPLIST_FILE = OCStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -947,6 +968,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WRM5754N86;
 				INFOPLIST_FILE = OCStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

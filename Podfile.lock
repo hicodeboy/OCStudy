@@ -1,30 +1,22 @@
 PODS:
-  - geos (6.0.2)
-  - GEOSwift (8.1.0):
-    - geos (~> 6.0)
   - SDWebImage (5.10.4):
     - SDWebImage/Core (= 5.10.4)
   - SDWebImage/Core (5.10.4)
   - YYAsyncLayer (1.0)
 
 DEPENDENCIES:
-  - GEOSwift
   - SDWebImage
   - YYAsyncLayer
 
 SPEC REPOS:
   trunk:
-    - geos
-    - GEOSwift
     - SDWebImage
     - YYAsyncLayer
 
 SPEC CHECKSUMS:
-  geos: 73e5122ba8c6857812419873df3aa9a1920140a9
-  GEOSwift: 229ea71cfa48ebac01180ceee1bc229721c4feb0
   SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
 
-PODFILE CHECKSUM: a49c5770ad06ee50f91160e6b09210cf519422e9
+PODFILE CHECKSUM: 3db45a172c6cc16d173dbb1fdd84fad17de5fe26
 
 COCOAPODS: 1.10.0

@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GEOSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-OCStudy-OCStudyUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -30,11 +25,6 @@
 			<false/>
 		</dict>
 		<key>YYAsyncLayer.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>geos.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
