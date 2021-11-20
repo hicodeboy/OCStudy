@@ -2,7 +2,7 @@
 //  MessageThrottle.m
 //  OCStudy
 //
-//  Created by dujia on 2021/3/16.
+//  Created by hicodeboy on 2021/3/16.
 //
 
 #import "MessageThrottle.h"
@@ -60,12 +60,42 @@ static const char * mt_blockMethodSignature(id blockObj) {
 
 @interface MessageThrottle()
 @property (nonatomic, strong) NSObject *flag;
+@property (nonatomic, strong) NSDate *lastTime;
 
 @end
 
 @implementation MessageThrottle
 
-+ (void)startTest {
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _lastTime = [[NSDate alloc] init];
+    }
+    return self;
+}
+
+
+- (void)throttle:(ThrottleBlock)throttle mode:(ThrottleMode)mode{
+    NSObject *flag = [[NSObject alloc] init];
+    __weak typeof(self) weakSelf = self;
+    
+    weakSelf.flag = flag;
+    NSDate *newDate = [[NSDate alloc] init];
+    
+    if (mode == ThrottleModeBefore) {
+        NSInteger delay = weakSelf.lastTime.timeIntervalSince1970 - newDate.timeIntervalSince1970;
+        
+        if (delay < -1) {
+            weakSelf.lastTime = [[NSDate alloc] init];
+            throttle();
+        }
+    } else {
+        NSInteger delay = newDate.timeIntervalSince1970 - weakSelf.lastTime.timeIntervalSince1970;
+        if (delay > 1) {
+            weakSelf.lastTime = [[NSDate alloc] init];
+            throttle();
+        }
+    }
     
 }
 
@@ -77,7 +107,6 @@ static const char * mt_blockMethodSignature(id blockObj) {
 @end
 
 @implementation MessageDebounce
-
 
 - (void)debounce:(DebounceBlock)debounce {
     NSObject *flag = [[NSObject alloc] init];

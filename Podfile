@@ -6,7 +6,7 @@ target 'OCStudy' do
   use_frameworks!
   pod 'SDWebImage'
   pod 'YYAsyncLayer'
-  pod 'GEOSwift'
+#  pod 'GEOSwift'
 
   # Pods for OCStudy
 

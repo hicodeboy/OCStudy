@@ -12,6 +12,7 @@
 @interface MessageThrottleViewController ()
 @property (nonatomic, strong) NSObject *flag;
 @property (nonatomic, strong) MessageDebounce *debounce;
+@property (nonatomic, strong) MessageThrottle *throttle;
 @end
 
 @implementation MessageThrottleViewController
@@ -20,9 +21,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [MessageThrottle startTest];
     
     _debounce = [[MessageDebounce alloc] init];
+    
+    _throttle = [[MessageThrottle alloc] init];
 }
 
 /*
@@ -95,8 +97,11 @@
 
 - (IBAction)btn2:(id)sender {
     
-    [UIImage imageNamed:@"ss"];
-    [self runMethod2];
+//    [UIImage imageNamed:@"ss"];
+//    [self runMethod2];
+    [_throttle throttle:^{
+        NSLog(@"函数节流");
+    }];
 }
 
 

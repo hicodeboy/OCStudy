@@ -11,6 +11,8 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import <OCStudy-Swift.h>
+#import "Thread/ThreadDemo1.h"
+
 @interface ViewController ()
 
 @end
@@ -20,8 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [OnceManagerA sharedInstance];
-    [OnceManagerB sharedInstance];
+//    [OnceManagerA sharedInstance];
+//    [OnceManagerB sharedInstance];
+    
+    [ThreadDemo1 startTest2];
     
 }
 
