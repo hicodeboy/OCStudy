@@ -11,8 +11,7 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import <OCStudy-Swift.h>
-#import "CBBaseLockDemo.h"
-#import "CBConditionDemo.h"
+#import "Thread/ThreadDemo1.h"
 
 @interface ViewController ()
 
@@ -25,8 +24,8 @@
     // Do any additional setup after loading the view.
 //    [OnceManagerA sharedInstance];
 //    [OnceManagerB sharedInstance];
-    CBBaseLockDemo *demo = [[CBConditionDemo alloc] init];
-    [demo lockTest];
+    
+    [ThreadDemo1 startTest2];
     
 }
 

@@ -8,9 +8,11 @@
 #import "MessageThrottleViewController.h"
 #import "MessageThrottle.h"
 #import <objc/runtime.h>
+//#import <objc/message.h>
 @interface MessageThrottleViewController ()
 @property (nonatomic, strong) NSObject *flag;
 @property (nonatomic, strong) MessageDebounce *debounce;
+@property (nonatomic, strong) MessageThrottle *throttle;
 @end
 
 @implementation MessageThrottleViewController
@@ -19,27 +21,37 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [MessageThrottle startTest];
     
     _debounce = [[MessageDebounce alloc] init];
+    
+    _throttle = [[MessageThrottle alloc] init];
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 + (void)load {
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        Class class = [self class];
-//        // When swizzling a class method, use the following:
-//        // Class class = object_getClass((id)self);
-//        SEL originalSelector = @selector(runMethod2);
-//        SEL swizzledSelector = @selector(cb_runMethod2);
-//
-//
-//        Method originalMethod = class_getInstanceMethod(class, originalSelector);
-//        class_addMethod(class,
-//                        swizzledSelector,
-//                        method_getImplementation(originalMethod),
-//                        method_getTypeEncoding(originalMethod));
-//        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+        // When swizzling a class method, use the following:
+        // Class class = object_getClass((id)self);
+        SEL originalSelector = @selector(runMethod2);
+        SEL swizzledSelector = @selector(cb_runMethod2);
+        
+        
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        class_addMethod(class,
+                        swizzledSelector,
+                        method_getImplementation(originalMethod),
+                        method_getTypeEncoding(originalMethod));
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
         
 //        class_addMethod(cls, NSSelectorFromString(MTForwardInvocationSelectorName), originalImplementation, "v@:@");
        
@@ -55,9 +67,9 @@
 //                                method_getImplementation(originalMethod),
 //                                method_getTypeEncoding(originalMethod));
 //        } else {
-//            method_exchangeImplementations(originalMethod, swizzledMethod);
+            method_exchangeImplementations(originalMethod, swizzledMethod);
 //        }
-//    });
+    });
     
 }
 
@@ -86,7 +98,10 @@
 - (IBAction)btn2:(id)sender {
     
 //    [UIImage imageNamed:@"ss"];
-    [self runMethod2];
+//    [self runMethod2];
+    [_throttle throttle:^{
+        NSLog(@"函数节流");
+    }];
 }
 
 
