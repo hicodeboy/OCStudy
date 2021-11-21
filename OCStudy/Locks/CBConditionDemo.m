@@ -2,7 +2,7 @@
 //  CBConditionDemo.m
 //  OCStudy
 //
-//  Created by dujia on 2021/11/20.
+//  Created by hicodeboy on 2021/11/20.
 //
 
 #import "CBConditionDemo.h"
@@ -55,7 +55,7 @@
     
     sleep(1);
     
-    [self.data addObject:@"Test"];
+    [self.data addObject:@"Hello"];
     NSLog(@"添加元素");
     
     // 信号
