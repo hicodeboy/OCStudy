@@ -23,6 +23,7 @@
 		E5A6F3DF2600629D002AC283 /* DebounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6F3DE2600629D002AC283 /* DebounceViewController.m */; };
 		E5A6F3E92600DCBE002AC283 /* MessageThrottle.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6F3E82600DCBE002AC283 /* MessageThrottle.m */; };
 		E5A6F3F22600DF60002AC283 /* MessageThrottleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6F3F12600DF60002AC283 /* MessageThrottleViewController.m */; };
+		E5B35F052749F50E00014200 /* CBProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B35F042749F50E00014200 /* CBProxy.m */; };
 		E5B3941B260DEB450055EE78 /* CBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B3941A260DEB450055EE78 /* CBOperation.m */; };
 		E5B39421260DEB900055EE78 /* CBOperationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B39420260DEB900055EE78 /* CBOperationTestViewController.m */; };
 		E5B644CF25F63F6F001CF932 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5B644CE25F63F6F001CF932 /* AppDelegate.m */; };
@@ -113,6 +114,8 @@
 		E5A6F3E82600DCBE002AC283 /* MessageThrottle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageThrottle.m; sourceTree = "<group>"; };
 		E5A6F3F02600DF60002AC283 /* MessageThrottleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageThrottleViewController.h; sourceTree = "<group>"; };
 		E5A6F3F12600DF60002AC283 /* MessageThrottleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageThrottleViewController.m; sourceTree = "<group>"; };
+		E5B35F032749F50E00014200 /* CBProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBProxy.h; sourceTree = "<group>"; };
+		E5B35F042749F50E00014200 /* CBProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBProxy.m; sourceTree = "<group>"; };
 		E5B39419260DEB450055EE78 /* CBOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBOperation.h; sourceTree = "<group>"; };
 		E5B3941A260DEB450055EE78 /* CBOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBOperation.m; sourceTree = "<group>"; };
 		E5B3941F260DEB900055EE78 /* CBOperationTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBOperationTestViewController.h; sourceTree = "<group>"; };
@@ -311,6 +314,15 @@
 			path = MsgDebounce;
 			sourceTree = "<group>";
 		};
+		E5B35EFF2749F4F200014200 /* NSProxyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E5B35F032749F50E00014200 /* CBProxy.h */,
+				E5B35F042749F50E00014200 /* CBProxy.m */,
+			);
+			path = NSProxyDemo;
+			sourceTree = "<group>";
+		};
 		E5B644C125F63F6F001CF932 = {
 			isa = PBXGroup;
 			children = (
@@ -336,6 +348,7 @@
 		E5B644CC25F63F6F001CF932 /* OCStudy */ = {
 			isa = PBXGroup;
 			children = (
+				E5B35EFF2749F4F200014200 /* NSProxyDemo */,
 				E5DF1D6B274892C3007C2F62 /* Locks */,
 				FAC71E3A2740020A00A924A6 /* Thread */,
 				E5E6E9462731560700AACD2B /* Geos */,
@@ -773,6 +786,7 @@
 				E5A6F3F22600DF60002AC283 /* MessageThrottleViewController.m in Sources */,
 				E55C508B261C90A000ECCA7D /* ArchivedViewController.m in Sources */,
 				E5B6451125F63FE8001CF932 /* MDPointerViewController.m in Sources */,
+				E5B35F052749F50E00014200 /* CBProxy.m in Sources */,
 				E5DB8514266A024300765F96 /* LoopScrollImageView.m in Sources */,
 				E5B72E382684889E00BD5007 /* MKMapViewController.m in Sources */,
 				E5DC863426DBA87300537DA2 /* BlockDemo.m in Sources */,
